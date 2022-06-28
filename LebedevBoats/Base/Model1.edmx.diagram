@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9f1faa6e80b24c5b838c00a94b99db9d" Name="Diagram1">
+        <EntityTypeShape EntityType="LR_5Model.Accessory_" Width="2.5" PointX="0.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.AccToBoats_" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.Boat_" Width="1.625" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.Contract_" Width="2" PointX="8.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.Customer_" Width="1.75" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.Invoice_" Width="1.5" PointX="10.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.Order_" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.OrderDetails_" Width="1.5" PointX="11.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.Partner_" Width="1.5" PointX="1.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.SalesPerson_" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LR_5Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="LR_5Model.FK_Accessory__Partner_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_AccToBoats__Accessory_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_OrderDetails__Accessory_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_AccToBoats__Boat_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_Order__Boat_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_Contract__Order_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_Invoice__Contract_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_Order__Customer_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_Order__SalesPerson_" ManuallyRouted="false" />
+        <AssociationConnector Association="LR_5Model.FK_OrderDetails__Order_" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

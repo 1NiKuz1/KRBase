@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GosProgramsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Executers">
+    <Key>
+      <PropertyRef Name="idExecuter" />
+    </Key>
+    <Property Name="idExecuter" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GosProgram">
+    <Key>
+      <PropertyRef Name="idGosProg" />
+    </Key>
+    <Property Name="idGosProg" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" />
+    <Property Name="dateStart" Type="int" />
+    <Property Name="dateEnd" Type="int" />
+    <Property Name="idExecuter" Type="int" />
+  </EntityType>
+  <EntityType Name="GosPrograms">
+    <Key>
+      <PropertyRef Name="idGosProgs" />
+    </Key>
+    <Property Name="idGosProgs" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idGosProg" Type="int" />
+    <Property Name="idExecuter" Type="int" />
+  </EntityType>
+  <EntityType Name="Subroutines">
+    <Key>
+      <PropertyRef Name="idSubroutines" />
+    </Key>
+    <Property Name="idSubroutines" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" />
+    <Property Name="idGosProg" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_GosProgram_Executers">
+    <End Role="Executers" Type="Self.Executers" Multiplicity="0..1" />
+    <End Role="GosProgram" Type="Self.GosProgram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Executers">
+        <PropertyRef Name="idExecuter" />
+      </Principal>
+      <Dependent Role="GosProgram">
+        <PropertyRef Name="idExecuter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GosPrograms_Executers">
+    <End Role="Executers" Type="Self.Executers" Multiplicity="0..1" />
+    <End Role="GosPrograms" Type="Self.GosPrograms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Executers">
+        <PropertyRef Name="idExecuter" />
+      </Principal>
+      <Dependent Role="GosPrograms">
+        <PropertyRef Name="idExecuter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GosPrograms_GosProgram">
+    <End Role="GosProgram" Type="Self.GosProgram" Multiplicity="0..1" />
+    <End Role="GosPrograms" Type="Self.GosPrograms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GosProgram">
+        <PropertyRef Name="idGosProg" />
+      </Principal>
+      <Dependent Role="GosPrograms">
+        <PropertyRef Name="idGosProg" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subroutines_GosProgram">
+    <End Role="GosProgram" Type="Self.GosProgram" Multiplicity="0..1" />
+    <End Role="Subroutines" Type="Self.Subroutines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GosProgram">
+        <PropertyRef Name="idGosProg" />
+      </Principal>
+      <Dependent Role="Subroutines">
+        <PropertyRef Name="idGosProg" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="GosProgramsModelStoreContainer">
+    <EntitySet Name="Executers" EntityType="Self.Executers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GosProgram" EntityType="Self.GosProgram" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GosPrograms" EntityType="Self.GosPrograms" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subroutines" EntityType="Self.Subroutines" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_GosProgram_Executers" Association="Self.FK_GosProgram_Executers">
+      <End Role="Executers" EntitySet="Executers" />
+      <End Role="GosProgram" EntitySet="GosProgram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GosPrograms_Executers" Association="Self.FK_GosPrograms_Executers">
+      <End Role="Executers" EntitySet="Executers" />
+      <End Role="GosPrograms" EntitySet="GosPrograms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GosPrograms_GosProgram" Association="Self.FK_GosPrograms_GosProgram">
+      <End Role="GosProgram" EntitySet="GosProgram" />
+      <End Role="GosPrograms" EntitySet="GosPrograms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subroutines_GosProgram" Association="Self.FK_Subroutines_GosProgram">
+      <End Role="GosProgram" EntitySet="GosProgram" />
+      <End Role="Subroutines" EntitySet="Subroutines" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

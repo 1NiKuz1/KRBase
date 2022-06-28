@@ -1,0 +1,26 @@
+﻿<Page x:Class="Project1.Pages.AccessoriesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AccessoriesPage">
+
+    <Grid>
+        <DataGrid x:Name="AccessoriesGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Path=AccName}" Width="130"/>
+                    <DataGridTextColumn Header="Описание" Binding="{Binding Path=DesciptionsOfAccessory}" Width="*"/>
+                    <DataGridTextColumn Header="Цена" Binding="{Binding Path=Price}" Width="100"/>
+                    <DataGridTextColumn Header="VAT" Binding="{Binding Path=VAT}" Width="50"/>
+                    <DataGridTextColumn Header="Инвентарь" Binding="{Binding Path=Inventory}" Width="100"/>
+                    <DataGridTextColumn Header="Ур." Binding="{Binding Path=OrderLevel}" Width="40"/>
+                    <DataGridTextColumn Header="Батча" Binding="{Binding Path=OrderBatch}" Width="40"/>
+                    <DataGridTextColumn Header="Партнер" Binding="{Binding Path=Partner_.Name}" Width="170"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+    </Grid>
+</Page>

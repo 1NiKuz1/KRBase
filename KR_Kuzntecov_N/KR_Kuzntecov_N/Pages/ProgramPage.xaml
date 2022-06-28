@@ -1,0 +1,101 @@
+﻿<Page x:Class="KR_Kuzntecov_N.Pages.ProgramPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KR_Kuzntecov_N.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProgramPage" Loaded="Page_Loaded">
+
+    <Grid Background="#fafafa">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition x:Name="ColumnChange" Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Программы" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="26" FontWeight="ExtraBold"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal">
+            <Button x:Name="RecordAdd" Content="Добавить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordAdd_Click"/>
+            <Button x:Name="RecordCopy" Content="Копировать" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordkCopy_Click"/>
+            <Button x:Name="RecordEdit" Content="Изменить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordEdit_Click"/>
+            <Button x:Name="RecordDellete" Content="Удалить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordDelete_Click"/>
+
+            <Label Content="|" FontSize="24" FontWeight="Bold" Foreground="Gray" Margin="15,0,0,0"/>
+            <ComboBox x:Name="FilterComboBox" Width="150" Height="30" Margin="15,0,0,0"/>
+            <TextBox x:Name="FilterTextBox" Margin="5,0,5,0" Width="170" Height="30" TextChanged="FilterTextBox_TextChanged"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical">
+
+            <Label x:Name="RecordLabel" Content="Добавить Запись" FontSize="16" FontWeight="Bold" Margin="5,0,0,0"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Name" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextName"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="dateStart" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextDateStart"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="dateEnd" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextDateEnd"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="Executer" Margin="5,0,0,0" Width="100"/>
+                <ComboBox x:Name="RecordComboBoxExecuter" Height="35" Width="150" Margin="5,0,0,0"  DisplayMemberPath="name"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                <Button x:Name="GosProgramAddCommit" Content="Добавить запись" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="GosProgramAddCommit_Click"/>
+                <Button x:Name="GosProgramAddRollback" Content="Отменить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="GosProgramAddRollback_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <DataGrid Grid.Row="2" Grid.Column="0" x:Name="GosProgramGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="name" Binding="{Binding Path=name}" Width="10*"/>
+                <DataGridTextColumn Header="dateStart" Binding="{Binding Path=dateStart}" Width="10*"/>
+                <DataGridTextColumn Header="dateEnd" Binding="{Binding Path=dateEnd}" Width="10*"/>
+                <DataGridTextColumn Header="executer" Binding="{Binding Path=Executers.name}" Width="10*"/>
+
+                <DataGridTemplateColumn Header="Управление">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Изм." Width="30" Margin="5,0,0,0"
+                                            FontSize="8"/>
+                                <Button Content="Удал." Width="30" Margin="5,0,5,0"
+                                            FontSize="8"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

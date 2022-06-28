@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NewsLentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="comment_id" />
+    </Key>
+    <Property Name="comment_id" Type="Int32" Nullable="false" />
+    <Property Name="news_id" Type="Int32" Nullable="false" />
+    <Property Name="text_comment" Type="String" MaxLength="255" FixedLength="true" Unicode="false" />
+    <Property Name="date_make" Type="DateTime" Precision="0" />
+    <Property Name="date_update" Type="DateTime" Precision="0" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="News" Relationship="Self.FK_Comments_News" FromRole="Comments" ToRole="News" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Comments_Users" FromRole="Comments" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Kategories">
+    <Key>
+      <PropertyRef Name="kategory_id" />
+    </Key>
+    <Property Name="kategory_id" Type="Int32" Nullable="false" />
+    <Property Name="name_kategory" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="News" Relationship="Self.FK_News_Kategories" FromRole="Kategories" ToRole="News" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="news_id" />
+    </Key>
+    <Property Name="news_id" Type="Int32" Nullable="false" />
+    <Property Name="header" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="full_text" Type="String" MaxLength="250" FixedLength="true" Unicode="false" />
+    <Property Name="date_make" Type="DateTime" Precision="0" />
+    <Property Name="date_update" Type="DateTime" Precision="0" />
+    <Property Name="kategory_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_News" FromRole="News" ToRole="Comments" />
+    <NavigationProperty Name="Kategories" Relationship="Self.FK_News_Kategories" FromRole="News" ToRole="Kategories" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_Users" FromRole="Users" ToRole="Comments" />
+  </EntityType>
+  <Association Name="FK_Comments_News">
+    <End Role="News" Type="Self.News" Multiplicity="1" />
+    <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News">
+        <PropertyRef Name="news_id" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="news_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_Kategories">
+    <End Role="Kategories" Type="Self.Kategories" Multiplicity="1" />
+    <End Role="News" Type="Self.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kategories">
+        <PropertyRef Name="kategory_id" />
+      </Principal>
+      <Dependent Role="News">
+        <PropertyRef Name="kategory_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NewsLentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Comments" EntityType="Self.Comments" />
+    <EntitySet Name="Kategories" EntityType="Self.Kategories" />
+    <EntitySet Name="News" EntityType="Self.News" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_Comments_News" Association="Self.FK_Comments_News">
+      <End Role="News" EntitySet="News" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Users" Association="Self.FK_Comments_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_Kategories" Association="Self.FK_News_Kategories">
+      <End Role="Kategories" EntitySet="Kategories" />
+      <End Role="News" EntitySet="News" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

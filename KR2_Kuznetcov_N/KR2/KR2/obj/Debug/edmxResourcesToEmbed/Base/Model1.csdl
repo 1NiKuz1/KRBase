@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KR2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Debtors">
+    <Key>
+      <PropertyRef Name="id_debtor" />
+    </Key>
+    <Property Name="id_debtor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_debtor" Type="String" MaxLength="150" FixedLength="true" Unicode="true" />
+    <Property Name="INN" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Doc" Relationship="Self.FK_Doc_Debtors" FromRole="Debtors" ToRole="Doc" />
+  </EntityType>
+  <EntityType Name="Doc">
+    <Key>
+      <PropertyRef Name="id_Doc" />
+    </Key>
+    <Property Name="id_Doc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_debtor" Type="Int32" />
+    <Property Name="name_doc" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="number_doc" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="date_doc" Type="DateTime" Precision="0" />
+    <Property Name="date_doc_to_KR2" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Debtors" Relationship="Self.FK_Doc_Debtors" FromRole="Doc" ToRole="Debtors" />
+    <NavigationProperty Name="KR2" Relationship="Self.FK_KR2_Doc" FromRole="Doc" ToRole="KR2" />
+  </EntityType>
+  <EntityType Name="KR2">
+    <Key>
+      <PropertyRef Name="id_KR2" />
+    </Key>
+    <Property Name="id_KR2" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_doc" Type="Int32" />
+    <Property Name="number_KR2" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="date_KR2" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Doc" Relationship="Self.FK_KR2_Doc" FromRole="KR2" ToRole="Doc" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Doc_Debtors">
+    <End Role="Debtors" Type="Self.Debtors" Multiplicity="0..1" />
+    <End Role="Doc" Type="Self.Doc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Debtors">
+        <PropertyRef Name="id_debtor" />
+      </Principal>
+      <Dependent Role="Doc">
+        <PropertyRef Name="id_debtor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KR2_Doc">
+    <End Role="Doc" Type="Self.Doc" Multiplicity="0..1" />
+    <End Role="KR2" Type="Self.KR2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doc">
+        <PropertyRef Name="id_Doc" />
+      </Principal>
+      <Dependent Role="KR2">
+        <PropertyRef Name="id_doc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KR2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Debtors" EntityType="Self.Debtors" />
+    <EntitySet Name="Doc" EntityType="Self.Doc" />
+    <EntitySet Name="KR2" EntityType="Self.KR2" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_Doc_Debtors" Association="Self.FK_Doc_Debtors">
+      <End Role="Debtors" EntitySet="Debtors" />
+      <End Role="Doc" EntitySet="Doc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KR2_Doc" Association="Self.FK_KR2_Doc">
+      <End Role="Doc" EntitySet="Doc" />
+      <End Role="KR2" EntitySet="KR2" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(KR2Model.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(KR2Model.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="Users" EntityType="KR2Model.Users" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="Int32" Nullable="false" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,89 @@
+﻿<Page x:Class="Project1.Pages.BoatPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BoatPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="110"/>
+            <ColumnDefinition x:Name="BoatColumnChange" Width="300" MaxWidth="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Background="White" Orientation="Horizontal">
+            <Label Content="Лодки" FontSize="20" FontWeight="Bold"/>
+           
+
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1" Background="White" Orientation="Horizontal">
+            <Button x:Name="BoatAdd" Content="Добавить" Width="100" Margin="10,0,0,0" Click="BookAdd_Click"/>
+            <Button x:Name="BoatCopy" Content="Копировать" Width="100" Margin="10,0,0,0" Click="BoatCopy_Click"/>
+            <Button x:Name="BoatChange" Content="Изменить" Width="100" Margin="10,0,0,0" Click="BoatChange_Click"/>
+            <Button x:Name="BoatDelete" Content="Удалить" Width="100" Margin="10,0,0,0" Click="Delete_Click"/>
+            <StackPanel Grid.Column="1" Grid.Row="1" Background="White" Orientation="Horizontal">
+                <ComboBox x:Name="BoatFilterCombobox" Width="100" Margin="10,0,0,0"/>
+                <TextBox x:Name="BookFilterTextBox" Width="100" Margin="10,0,0,0" TextChanged="FilterTextBox_TextChanged"/>
+            </StackPanel>
+        </StackPanel>
+        <Rectangle Grid.Column="1" Grid.Row="0" Fill="White"/>
+        <Rectangle></Rectangle>
+        <StackPanel Grid.Column="1" Grid.Row="2" Background="White" Orientation="Vertical">
+            <Label x:Name="AddLabel" Content="Копировать-добавить" FontSize="20" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label  Content="Модель" Width="100"/>
+                <TextBox x:Name="BoatModel" Width="120" Height="30" Text="{Binding ElementName=BoatGrid, Path=SelectedItem.Model}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label  Content="Тип" Width="100"/>
+                <TextBox x:Name="Type" Width="120" Height="30" Text="{Binding ElementName=BoatGrid, Path=SelectedItem.BoatType}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label  Content="Мачта" Width="100"/>
+                <CheckBox x:Name="Macht" Content="{Binding ElementName=BoatGrid, Path=SelectedItem.Mast}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label x:Name="Colour" Content="Цвет" Width="100"/>
+                <ComboBox x:Name="BoatComboColour" Width="120" Height="30" DisplayMemberPath="Colour" Text="{Binding ElementName=BoatGrid, Path=SelectedItem.BoatPage.Colour}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label  Content="Материал" Width="100"/>
+                <ComboBox x:Name="BoatComboMaterial" Width="120" Height="30" DisplayMemberPath="Wood" Text="{Binding ElementName=BoatGrid, Path=SelectedItem.BoatPage.Wood}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label  Content="Начальная цена" Width="100"/>
+                <TextBox x:Name="Price" Width="120" Height="30" Text="{Binding ElementName=BoatGrid, Path=SelectedItem.BasePrice}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label  Content="VAT" Width="100"/>
+                <TextBox x:Name="VAT" Width="120" Height="30" Text="{Binding ElementName=BoatGrid, Path=SelectedItem.VAT}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="AddButton" Content="Копировать" Width="100" Margin="10,0,0,0" Click="AddFinal_Click"/>
+                <Button Content="Отменить" Width="100" Margin="10,0,0,0" Click="Cancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+
+
+        <DataGrid Grid.Column="0" Grid.Row="2" x:Name="BoatGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Модель" Binding="{Binding Path=Model}" Width="100"/>
+                <DataGridTextColumn Header="Тип лодки" Binding="{Binding Path=BoatType}" Width="*"/>
+                <DataGridTextColumn Header="Мачта" Binding="{Binding Path=Mast}" Width="100"/>
+                <DataGridTextColumn Header="Цвет" Binding="{Binding Path=Colour}" Width="100"/>
+                <DataGridTextColumn Header="Древесина" Binding="{Binding Path=Wood}" Width="100"/>
+                <DataGridTextColumn Header="Начальная цена" Binding="{Binding Path=BasePrice}" Width="100"/>
+                <DataGridTextColumn Header="VAT" Binding="{Binding Path=VAT}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

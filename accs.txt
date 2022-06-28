@@ -1,0 +1,268 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Lodochka.Pages
+{
+    /// <summary>
+    /// Interaction logic for AccessoryPage.xaml
+    /// </summary>
+    public partial class AccessoryPage : Page
+    {
+        public AccessoryPage()
+        {
+            InitializeComponent();
+            DataContext = this;
+            UpdateGrid(null);
+            //AccessoryGrid.ItemsSource = SourceCore.MyBase.Accessory.ToList();
+            RecordComboBoxPartner.ItemsSource = SourceCore.MyBase.Partner.ToList();
+            AccessoryDlgLoad(false);
+        }
+
+        private int DlgMode = -1;
+        private string AccName;
+        private string DescriptionOfAccessory;
+        private string Price;
+        private string VAT;
+        private string Inventory;
+        private string OrderLevel;
+        private string OrderBatch;
+        private string Partner;
+
+        public void UpdateGrid(Base.Accessory accessory)
+        {
+            if ((accessory == null) && (AccessoryGrid.ItemsSource != null))
+            {
+                accessory = (Base.Accessory)AccessoryGrid.SelectedItem;
+            }
+            // 1-ый способ, используя коллекцию – РЕКОМЕНДУЕТСЯ
+            ObservableCollection<Base.Accessory> Accessorys =
+            new ObservableCollection<Base.Accessory>(SourceCore.MyBase.Accessory.ToList());
+            AccessoryGrid.ItemsSource = Accessorys;
+            AccessoryGrid.SelectedItem = accessory;
+            // 2-ый способ, используя лист
+            // BookDataGrid.ItemsSource = SourceCore.MyBase.Books.ToList();
+
+        }
+
+
+
+        public void AccessoryDlgLoad(bool b)
+        {
+            if (b == true)
+            {
+                ColumnChange.Width = new GridLength(300);
+                AccessoryGrid.IsHitTestVisible = false;
+            }
+            else
+            {
+                ColumnChange.Width = new GridLength(0);
+                AccessoryGrid.IsHitTestVisible = true;
+            }
+        }
+
+        private void RecordAdd_Click(object sender, RoutedEventArgs e)
+        {
+            AccessoryDlgLoad(true);
+            DlgMode = 0;
+            AccessoryGrid.SelectedItem = null;
+            RecordLabel.Content = "Добавить запись";
+            AccessoryAddCommit.Content = "Добавить";
+            RecordTextAccName.Text = "";
+            RecordTextDescriptionOfAccessory.Text = "";
+            RecordTextPrice.Text = "0";
+            RecordTextVAT.Text = "0";
+            RecordTextInventory.Text = "0";
+            RecordTextOrderLevel.Text = "0";
+            RecordTextOrderBatch.Text = "0";
+            RecordComboBoxPartner.Text = "";
+        }
+
+        private void RecordkCopy_Click(object sender, RoutedEventArgs e)
+        {
+            if (AccessoryGrid.SelectedItem != null)
+            {
+                AccessoryDlgLoad(true);
+                DlgMode = 0;
+                RecordLabel.Content = "Копировать запись";
+                AccessoryAddCommit.Content = "Копировать";
+                AccName = RecordTextAccName.Text;
+                DescriptionOfAccessory = RecordTextDescriptionOfAccessory.Text;
+                Price = RecordTextPrice.Text;
+                VAT = RecordTextVAT.Text;
+                Inventory = RecordTextInventory.Text;
+                OrderLevel = RecordTextOrderLevel.Text;
+                OrderBatch = RecordTextOrderBatch.Text;
+                Partner = RecordComboBoxPartner.Text;
+
+                AccessoryGrid.SelectedItem = null;
+                RecordTextAccName.Text = AccName;
+                RecordTextDescriptionOfAccessory.Text = DescriptionOfAccessory;
+                RecordTextPrice.Text = Price;
+                RecordTextVAT.Text = VAT;
+                RecordTextInventory.Text = Inventory;
+                RecordTextOrderLevel.Text = OrderLevel;
+                RecordTextOrderBatch.Text = OrderBatch;
+                RecordComboBoxPartner.Text = Partner;
+            }
+            else
+            {
+                MessageBox.Show("Не выбрано ни одной строки!", "Сообщение", MessageBoxButton.OK);
+            }
+
+        }
+
+        private void RecordEdit_Click(object sender, RoutedEventArgs e)
+        {
+            if (AccessoryGrid.SelectedItem != null)
+            {
+                AccessoryDlgLoad(true);
+                RecordLabel.Content = "Изменить книгу";
+                AccessoryAddCommit.Content = "Изменить";
+            }
+            else
+            {
+                MessageBox.Show("Не выбрано ни одной строки!", "Сообщение", MessageBoxButton.OK);
+            }
+
+        }
+
+        private void RecordDelete_Click(object sender, RoutedEventArgs e)
+        {
+            //if (MessageBox.Show("Удалить запись?", "Внимание",
+            //    MessageBoxButton.OKCancel, MessageBoxImage.Warning) == MessageBoxResult.OK)
+            //{
+            //    SourceCore.MyBase.Accessory.
+            //    Remove((Base.Accessory)AccessoryGrid.SelectedItem);
+            //    SourceCore.MyBase.SaveChanges();
+            //}
+            if (MessageBox.Show("Удалить запись?", "Внимание", MessageBoxButton.OKCancel, MessageBoxImage.Warning) == MessageBoxResult.OK)
+            {
+
+                try
+                {
+                    // Ссылка на удаляемую книгу
+                    Base.Accessory DeletingAccessory = (Base.Accessory)AccessoryGrid.SelectedItem;
+                    // Определение ссылки, на которую должен перейти указатель после удаления
+                    if (AccessoryGrid.SelectedIndex < AccessoryGrid.Items.Count - 1)
+                    {
+                        AccessoryGrid.SelectedIndex++;
+                    }
+                    else
+                    {
+                        if (AccessoryGrid.SelectedIndex > 0)
+                        {
+                            AccessoryGrid.SelectedIndex--;
+                        }
+                    }
+                    Base.Accessory SelectingAccessory = (Base.Accessory)AccessoryGrid.SelectedItem;
+                    SourceCore.MyBase.Accessory.Remove(DeletingAccessory);
+                    SourceCore.MyBase.SaveChanges();
+                    UpdateGrid(SelectingAccessory);
+                }
+                catch
+                {
+
+                    MessageBox.Show("Невозможно удалить запись, так как она используется в других справочниках базы данных.",
+                    "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.None);
+                }
+            }
+
+        }
+
+        private void AccessoryAddCommit_Click(object sender, RoutedEventArgs e)
+        {
+            //var NewRecord = new Base.Accessory();
+            //NewRecord.AccName = RecordTextAccName.Text;
+            //NewRecord.DescriptionOfAccessory = RecordTextDescriptionOfAccessory.Text;
+            //NewRecord.Price = (decimal?)double.Parse(RecordTextPrice.Text);
+            //NewRecord.VAT = (decimal?)double.Parse(RecordTextVAT.Text);
+            //NewRecord.Inventory = int.Parse(RecordTextInventory.Text);
+            //NewRecord.OrderLevel = int.Parse(RecordTextOrderLevel.Text);
+            //NewRecord.OrderBatch = int.Parse(RecordTextOrderBatch.Text);
+            //if (DlgMode == 0)
+            //{
+            //    SourceCore.MyBase.Accessory.Add(NewRecord);
+            //}
+            //SourceCore.MyBase.SaveChanges();
+            //AccessoryDlgLoad(false);
+            //DlgMode = -1;
+            StringBuilder errors = new StringBuilder();
+
+            if (RecordComboBoxPartner.SelectedItem == null)
+                errors.AppendLine("Укажите партнера");
+
+            if (string.IsNullOrEmpty(RecordTextAccName.Text))
+                errors.AppendLine("Укажите название AccName");
+
+            if (string.IsNullOrEmpty(RecordTextDescriptionOfAccessory.Text))
+                errors.AppendLine("Укажите название DescriptionOfAccessory");
+
+            if (string.IsNullOrEmpty(RecordTextPrice.Text))
+                errors.AppendLine("Укажите название Price");
+
+            if (string.IsNullOrEmpty(RecordTextVAT.Text))
+                errors.AppendLine("Укажите название VAT");
+
+            if (string.IsNullOrEmpty(RecordTextInventory.Text))
+                errors.AppendLine("Укажите название Inventory");
+
+            if (string.IsNullOrEmpty(RecordTextOrderLevel.Text))
+                errors.AppendLine("Укажите название OrderLevel");
+
+            if (string.IsNullOrEmpty(RecordTextOrderBatch.Text))
+                errors.AppendLine("Укажите название OrderBatch");
+
+            if (errors.Length > 0)
+            {
+                MessageBox.Show(errors.ToString());
+                return;
+            }
+
+            var NewAccessory = new Base.Accessory();
+            NewAccessory.AccName = RecordTextAccName.Text.Trim();
+            NewAccessory.DescriptionOfAccessory = RecordTextDescriptionOfAccessory.Text.Trim();
+            NewAccessory.Price = Convert.ToDecimal(RecordTextPrice.Text.Replace('.', ','));
+            NewAccessory.VAT = Convert.ToDecimal(RecordTextVAT.Text.Replace('.', ','));
+            NewAccessory.Inventory = int.Parse(RecordTextInventory.Text);
+            NewAccessory.OrderLevel = int.Parse(RecordTextOrderLevel.Text);
+            NewAccessory.OrderBatch = int.Parse(RecordTextOrderBatch.Text);
+            NewAccessory.Partner = (Base.Partner)RecordComboBoxPartner.SelectedItem;
+
+            if (DlgMode == 0)
+            {
+                SourceCore.MyBase.Accessory.Add(NewAccessory);
+            }
+
+            try
+            {
+                SourceCore.MyBase.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+
+            UpdateGrid(NewAccessory);
+            AccessoryDlgLoad(false);
+            DlgMode = -1;
+        }
+
+        private void AccessoryAddRollback_Click(object sender, RoutedEventArgs e)
+        {
+            AccessoryDlgLoad(false);
+        }
+    }
+}

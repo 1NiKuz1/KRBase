@@ -1,0 +1,310 @@
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test — копия\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Test_версия 2\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver2\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver3\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver4\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\BookPageWithDlg.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\BookPageWithDlg.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\CopyPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver5\TestApp\obj\Debug\Pages\CopyPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\BookPageWithDlg.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\CopyPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\BookPageWithDlg.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\CopyPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\AuthorizationWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\AuthorizationWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\RegistrationWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver6\TestApp\obj\Debug\RegistrationWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\AuthorizationWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\BookPageWithDlg.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\BookPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\CopyPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\PublishPage.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\RegistrationWindow.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\App.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp_Content.g.cs
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\AuthorizationWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\MainWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\BookDlgPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\BookPageWithDlg.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\BookPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\PublishPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\RegistrationWindow.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\TestApp.exe.config
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\TestApp.exe
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\TestApp.pdb
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\EntityFramework.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\EntityFramework.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\Pages\CopyPage.baml
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.g.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+C:\Разное\РПК\РЭУБД\Создание WPF-проекта\Презентационный материал\Library\Library_ver7\TestApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\TestApp.exe.config
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\TestApp.exe
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\TestApp.pdb
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\EntityFramework.dll
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\EntityFramework.xml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\bin\Debug\ru\EntityFramework.resources.dll
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\AuthorizationWindow.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\MainWindow.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\BookDlgPage.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\BookPageWithDlg.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\BookPage.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\CopyPage.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\PublishPage.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\RegistrationWindow.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\App.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp_Content.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\AuthorizationWindow.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\MainWindow.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\BookDlgPage.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\BookPageWithDlg.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\BookPage.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\CopyPage.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\Pages\PublishPage.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\RegistrationWindow.baml
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.g.resources
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.csproj.GenerateResource.cache
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.exe
+\\Server03\Site\localhost\www\3IS2\KuznecovN\Kuznetcov_N_BASE\Library_ver7_theme9\TestApp\obj\Debug\TestApp.pdb

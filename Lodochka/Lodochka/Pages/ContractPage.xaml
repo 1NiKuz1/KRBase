@@ -1,0 +1,113 @@
+﻿<Page x:Class="Lodochka.Pages.ContractPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lodochka.Pages" 
+      xmlns:local_convert="clr-namespace:Lodochka"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ContractPage" Loaded="Page_Loaded">
+
+    <Page.Resources>
+        <local_convert:ConverterValue x:Key="convertervalue">
+        </local_convert:ConverterValue>
+    </Page.Resources>
+    <Grid Background="#fafafa">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition x:Name="ColumnChange" Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Контракт" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="26" FontWeight="ExtraBold"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal">
+            <Button x:Name="RecordAdd" Content="Добавить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordAdd_Click"/>
+            <Button x:Name="RecordCopy" Content="Копировать" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordkCopy_Click"/>
+            <Button x:Name="RecordEdit" Content="Изменить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordEdit_Click"/>
+            <Button x:Name="RecordDellete" Content="Удалить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordDelete_Click"/>
+
+            <Label Content="|" FontSize="24" FontWeight="Bold" Foreground="Gray" Margin="15,0,0,0"/>
+            <ComboBox x:Name="FilterComboBox" Width="150" Height="30" Margin="15,0,0,0"/>
+            <TextBox x:Name="FilterTextBox" Margin="5,0,5,0" Width="170" Height="30" TextChanged="FilterTextBox_TextChanged"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical">
+
+            <Label x:Name="RecordLabel" Content="Добавить Запись" FontSize="16" FontWeight="Bold" Margin="5,0,0,0"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Date" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextDate"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="DepositPayed" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextDepositPayed"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="ContractTotalPrice" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextContractTotalPrice"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label Content="ContracTotalPrice_inclVAT" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextContracTotalPrice_inclVAT"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="ProductionProcess" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextProductionProcess"  Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                <Button x:Name="ContractAddCommit" Content="Добавить запись" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="ContractAddCommit_Click"/>
+                <Button x:Name="ContractAddRollback" Content="Отменить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="ContractAddRollback_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+        
+        <DataGrid Grid.Row="2" Grid.Column="0" x:Name="ContractGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Binding="{Binding Path=Date, Converter={StaticResource convertervalue}}" Width="10*"/>
+                <DataGridTextColumn Header="DepositPayed" Binding="{Binding Path=DepositPayed}" Width="10*"/>
+                <DataGridTextColumn Header="ContractTotalPrice" Binding="{Binding Path=ContractTotalPrice}" Width="10*"/>
+                <DataGridTextColumn Header="ContracTotalPrice_inclVAT" Binding="{Binding Path=ContracTotalPrice_inclVAT}" Width="10*"/>
+                <DataGridTextColumn Header="ProductionProcess" Binding="{Binding Path=ProductionProcess}" Width="10*"/>
+
+                <DataGridTemplateColumn Header="Управление">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Изм." Width="30" Margin="5,0,0,0"
+                                            FontSize="8"/>
+                                <Button Content="Удал." Width="30" Margin="5,0,5,0"
+                                            FontSize="8"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

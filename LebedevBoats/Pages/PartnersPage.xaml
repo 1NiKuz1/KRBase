@@ -1,0 +1,72 @@
+﻿<Page x:Class="Project1.Pages.PartnersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PartnersPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="110"/>
+            <ColumnDefinition Width="300" MinWidth="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Background="White">
+            <Label Content="Партнеры" FontSize="20" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1" Background="White" Orientation="Horizontal">
+            <Button Content="Добавить" Width="100" Margin="10,0,0,0"/>
+            <Button Content="Копировать" Width="100" Margin="10,0,0,0"/>
+            <Button Content="Изменить" Width="100" Margin="10,0,0,0"/>
+            <Button Content="Удалить" Width="100" Margin="10,0,0,0"/>
+        </StackPanel>
+        <Rectangle Grid.Column="1" Grid.Row="0" Fill="White"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="White" Orientation="Horizontal">
+            <ComboBox Width="100" Margin="10,0,0,0"/>
+            <TextBox Width="100" Margin="10,0,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" Background="White" Orientation="Vertical">
+            <Label Content="Копировать-добавить" FontSize="20" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Наименование" Width="100"/>
+                <TextBox Width="120" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Автор" Width="100"/>
+                <TextBox Width="120" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Издательство" Width="100"/>
+                <ComboBox Width="120" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Год" Width="100"/>
+                <TextBox Width="120" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Копировать" Width="100" Margin="10,0,0,0"/>
+                <Button Content="Отменить" Width="100" Margin="10,0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+
+
+        <DataGrid Grid.Column="0" Grid.Row="2" x:Name="PartnersGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название организации" Binding="{Binding Path=Name}" Width="200"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Path=Address}" Width="*"/>
+                <DataGridTextColumn Header="Город" Binding="{Binding Path=City}" Width="100"/>
+            </DataGrid.Columns>
+
+        
+        </DataGrid>
+       
+    </Grid>
+</Page>

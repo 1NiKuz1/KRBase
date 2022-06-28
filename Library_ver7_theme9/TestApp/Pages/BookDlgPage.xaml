@@ -1,0 +1,44 @@
+﻿<Page x:Class="TestApp.Pages.BookDlgPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="BookDlgPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+               Content="Добавить книгу" FontSize="16" FontWeight="Bold" Margin="5,0,0,0"/>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+            <Label Content="Наименование" Margin="5,5,0,0"/>
+            <Label Content="Авторы" Margin="5,10,0,0"/>
+            <Label Content="Издательство" Margin="5,10,0,0"/>
+            <Label Content="Год" Margin="5,10,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <TextBox x:Name="BookTextName" Width="150" Height="35" Margin="5,5,0,0" Text="{Binding Book.Name}"/>
+            <TextBox x:Name="BookTextAuthors" Width="150" Height="35" Margin="5,5,0,0" Text="{Binding Authors}"/>
+            <ComboBox x:Name="BookComboBoxPublishers" Height="35" Width="150" Margin="5,0,0,0" DisplayMemberPath="PublisherName"
+                      Text="{Binding Path=Publishers.PublisherName}"/>
+            <TextBox x:Name="BookTextPublishYear" Width="150" Height="35" Margin="5,5,0,0" Text="{Binding PublishYear}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+            <Button x:Name="BookAddCommit" Content="Добавить книгу" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="BookAddCommit_Click"/>
+            <Button x:Name="BookAddRollback" Content="Отменить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="BookAddRollback_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

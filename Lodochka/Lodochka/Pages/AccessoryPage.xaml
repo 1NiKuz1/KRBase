@@ -1,0 +1,135 @@
+﻿<Page x:Class="Lodochka.Pages.AccessoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lodochka.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AccessoryPage" Loaded="Page_Loaded">
+
+    <Grid Background="#fafafa">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition x:Name="ColumnChange" Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Аксесуары" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="26" FontWeight="ExtraBold"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal">
+            <Button x:Name="RecordAdd" Content="Добавить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordAdd_Click"/>
+            <Button x:Name="RecordCopy" Content="Копировать" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordkCopy_Click"/>
+            <Button x:Name="RecordEdit" Content="Изменить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordEdit_Click"/>
+            <Button x:Name="RecordDellete" Content="Удалить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5"
+                    Click="RecordDelete_Click"/>
+
+            <Label Content="|" FontSize="24" FontWeight="Bold" Foreground="Gray" Margin="15,0,0,0"/>
+            <ComboBox x:Name="FilterComboBox" Width="150" Height="30" Margin="15,0,0,0"/>
+            <TextBox x:Name="FilterTextBox" Margin="5,0,5,0" Width="170" Height="30" TextChanged="FilterTextBox_TextChanged"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical">
+
+            <Label x:Name="RecordLabel" Content="Добавить Запись" FontSize="16" FontWeight="Bold" Margin="5,0,0,0"/>
+
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="AccName" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextAccName" 
+                 Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+        
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="DescriptionOfAccessory" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextDescriptionOfAccessory" 
+                Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="Price" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextPrice"                
+                 Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="VAT" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextVAT"               
+                 Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="Inventory" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextInventory" 
+                 Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="OrderLevel" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextOrderLevel" 
+                 Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="OrderBatch" Margin="5,0,0,0" Width="100"/>
+                <TextBox x:Name="RecordTextOrderBatch" 
+                 Width="150" Height="35" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="Partner" Margin="5,0,0,0" Width="100"/>
+                <ComboBox x:Name="RecordComboBoxPartner" Height="35" Width="150" Margin="5,0,0,0"  DisplayMemberPath="Name"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                <Button x:Name="AccessoryAddCommit" Content="Добавить запись" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="AccessoryAddCommit_Click"/>
+                <Button x:Name="AccessoryAddRollback" Content="Отменить" 
+                    Height="30" Width="100" Padding="5,5,5,5" Margin="5,5,0,5" Click="AccessoryAddRollback_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+
+
+        <DataGrid Grid.Row="2" Grid.Column="0" x:Name="AccessoryGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="AccName" Binding="{Binding Path=AccName}" Width="10*"/>
+                <DataGridTextColumn Header="DescriptionOfAccessory" Binding="{Binding Path=DescriptionOfAccessory}" Width="10*"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding Path=Price}" Width="10*"/>
+                <DataGridTextColumn Header="VAT" Binding="{Binding Path=VAT}" Width="10*"/>
+                <DataGridTextColumn Header="Inventory" Binding="{Binding Path=Inventory}" Width="10*"/>
+                <DataGridTextColumn Header="OrderLevel" Binding="{Binding Path=OrderLevel}" Width="10*"/>
+                <DataGridTextColumn Header="OrderBatch" Binding="{Binding Path=OrderBatch}" Width="10*"/>
+                <DataGridTextColumn Header="Partner" Binding="{Binding Path=Partner.Name}" Width="10*"/>
+
+                <DataGridTemplateColumn Header="Управление">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Изм." Width="30" Margin="5,0,0,0"
+                                            FontSize="8"/>
+                                <Button Content="Удал." Width="30" Margin="5,0,5,0"
+                                            FontSize="8"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>
